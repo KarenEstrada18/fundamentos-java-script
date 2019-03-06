@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase42</title>
+</head>
+<body>
+<script>
+
+	const karen=
+	{
+		nombre:'Karen',
+		apellido: 'Estrada'
+	}
+	const leo=
+	{
+		nombre:'Leo',
+		apellido: 'Salinas'
+	}
+
+	function saludar (saludo ='Hola')
+	{
+	console.log (`${saludo}, mi nombre es ${this.nombre}`)
+	}
+
+	//setTimeout (saludar.bind (karen),1000)
+
+	//const saludarAKaren = saludar.bind (karen)
+	//const saludarALeo = saludar.bind (leo)
+
+	//saludar.call(karen, 'Hola che')
+
+	saludar.apply (karen, ['Hola che'])
+
+</script>
+</body>
+</html>
